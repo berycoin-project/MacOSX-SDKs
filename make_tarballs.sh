@@ -41,7 +41,7 @@ else
 fi
 SDKS="";
 for sdk_directory in *.sdk; do
-  log "Compressing $sdk_directory to $sdk_directory.tar.xz...";
+  log "Compressing $sdk_directory to $sdk_directory.tar.gz...";
   tar -cpJf "release/$sdk_directory.tar.gz" "$sdk_directory";
   SDKS="${SDKS} $sdk_directory"
 done
